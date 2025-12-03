@@ -34,11 +34,51 @@
     .divider{height:2px;width:60%;margin:70px auto;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:0.4}
 
     /* Hero */
-    .hero{height:380px;border-radius:20px;margin-top:110px;position:relative;overflow:hidden;background:url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1600&auto=format') center/cover}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2),#040b14)}
-    .hero-content{position:absolute;bottom:30px;left:40px;max-width:600px}
-    .hero h1{font-size:42px;font-weight:900;margin-bottom:8px;color:white;text-shadow:0 0 18px rgba(110,231,183,0.9),0 0 28px rgba(96,165,250,0.8);}
-    .hero p{color:#b9c4d6;font-size:17px;line-height:1.6}
+   .hero{
+    height:380px;
+    border-radius:20px;
+    margin-top:110px;
+    position:relative;
+    overflow:hidden;
+    background:url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1600&auto=format') center/cover;
+    filter:brightness(1.25) contrast(1.1) saturate(1.2); /* brighter image */
+    box-shadow:0 0 35px rgba(255,255,255,0.25); /* soft outer glow */
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0,0.05),   /* lighter gradient */
+        rgba(4,11,20,0.65)
+    );
+}
+
+.hero-content{
+    position:absolute;
+    bottom:30px;
+    left:40px;
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:900;
+    margin-bottom:8px;
+    color:white;
+    text-shadow:
+        0 0 20px rgba(255,255,255,0.9),
+        0 0 35px rgba(110,231,183,0.9),
+        0 0 45px rgba(96,165,250,0.9); /* more bright & glowing */
+}
+
+.hero p{
+    color:#d9e3f5; /* brighter text */
+    font-size:17px;
+    line-height:1.6;
+}
 
     /* 3D Role Slider */
     .role-slider{margin-top:10px;height:28px;overflow:hidden;perspective:500px}
@@ -81,7 +121,7 @@
     <div class="hero-content">
       <h1>Pavan Kumar Gandavarapu</h1>
       <div class="role-slider">
-        <div>Python Developer<br>SDE<br>Prompt Engineer<br>Full Stack Developer<br>SDE</div>
+        <div>Python Developer<br>SDE<br>Prompt Engineer<br>Frontend Developer<br>SDE</div>
       </div>
       <p>Python coder,SDE, prompt engineer, and front-end developer passionate about crafting beautiful user experiences and building efficient digital solutions.</p>
     </div>
@@ -94,7 +134,7 @@
   <div class="card">
     <div class="profile-pic"><img src="PICTURE.png"></div>
     <h2 style="margin-top:20px;text-align:center">About Me</h2>
-    <p style="margin-top:10px;font-size:15px;line-height:1.7;color:var(--muted)">Python Developer, Software Development Engineer (SDE), Prompt Engineer, and Full Stack Developer with hands-on experience in building clean, responsive, and efficient web applications. I bring strong problem-solving abilities, a collaborative mindset, and a commitment to writing high-quality, maintainable code. My work focuses on developing scalable solutions, designing user-centric interfaces, and continuously enhancing user experience. I am seeking opportunities that allow me to contribute meaningfully to organizational objectives while growing my technical and professional capabilities.</p>
+    <p style="margin-top:10px;font-size:15px;line-height:1.7;color:var(--muted)">Python Developer, Software Development Engineer (SDE), Prompt Engineer, and Frontend Developer with hands-on experience in building clean, responsive, and efficient web applications. I bring strong problem-solving abilities, a collaborative mindset, and a commitment to writing high-quality, maintainable code. My work focuses on developing scalable solutions, designing user-centric interfaces, and continuously enhancing user experience. I am seeking opportunities that allow me to contribute meaningfully to organizational objectives while growing my technical and professional capabilities.</p>
   </div>
 </section>
 
