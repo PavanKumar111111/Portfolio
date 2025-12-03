@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pavan Kumar Gandavarapu — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#040b14;
+      --card:#0e1626;
+      --muted:#aab4c3;
+      --accent1:#7df5c6;
+      --accent2:#6aa8ff;
+      --glass:rgba(255,255,255,0.06);
+      --glass2:rgba(255,255,255,0.03);
+      --radius:18px;
+      font-family:'Inter',sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#040b14;color:#e6eef8;overflow-x:hidden}
+    html{scroll-behavior:smooth}
+
+    /* Floating Navigation */
+    nav{box-shadow:0 0 25px rgba(110,231,183,0.55),0 0 35px rgba(96,165,250,0.45);border:1px solid rgba(255,255,255,0.15);position:fixed;top:20px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.06);backdrop-filter:blur(10px);padding:10px 22px;border-radius:50px;display:flex;gap:20px;z-index:999;border:1px solid rgba(255,255,255,0.08)}
+    nav a{text-decoration:none;color:#cfe9ff;font-weight:600;font-size:14px;transition:0.3s}
+    nav a:hover{color:var(--accent2)}
+
+    /* Section wrapper */
+    section{padding:80px 20px;max-width:1000px;margin:auto;position:relative}
+
+    .divider{height:2px;width:60%;margin:70px auto;background:linear-gradient(90deg,transparent,var(--accent2),transparent);opacity:0.4}
+
+    /* Hero */
+    .hero{height:380px;border-radius:20px;margin-top:110px;position:relative;overflow:hidden;background:url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1600&auto=format') center/cover}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2),#040b14)}
+    .hero-content{position:absolute;bottom:30px;left:40px;max-width:600px}
+    .hero h1{font-size:42px;font-weight:900;margin-bottom:8px;color:white;text-shadow:0 0 18px rgba(110,231,183,0.9),0 0 28px rgba(96,165,250,0.8);}
+    .hero p{color:#b9c4d6;font-size:17px;line-height:1.6}
+
+    /* 3D Role Slider */
+    .role-slider{margin-top:10px;height:28px;overflow:hidden;perspective:500px}
+    .role-slider div{animation:slideRoles 6s infinite linear;font-weight:600;color:var(--accent1);font-size:18px}
+    @keyframes slideRoles{
+      0%{transform:translateY(0)}
+      33%{transform:translateY(-28px)}
+      66%{transform:translateY(-56px)}
+      100%{transform:translateY(0)}
+    }
+
+    /* Cards */
+    .card{background:var(--card);border-radius:var(--radius);padding:28px;border:1px solid var(--glass);box-shadow:0 10px 40px rgba(0,0,0,0.5);transition:0.4s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,0.55)}
+
+    .profile-pic{width:150px;height:150px;border-radius:50%;overflow:hidden;margin:auto;border:4px solid rgba(255,255,255,0.1);box-shadow:0 10px 40px rgba(0,0,0,0.5)}
+    .profile-pic img{width:100%;height:100%;object-fit:cover}
+
+    /* Contact */
+    .contact form{display:flex;flex-direction:column;gap:12px;margin-top:14px}
+    input,textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:white}
+    textarea{min-height:120px}
+    button{padding:12px;border:none;border-radius:10px;background:linear-gradient(90deg,var(--accent2),var(--accent1));font-weight:700;cursor:pointer;color:#041014}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#intern">Internships</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#certs">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="hero">
+  <div class="hero card">
+    <div class="hero-content">
+      <h1>Pavan Kumar Gandavarapu</h1>
+      <div class="role-slider">
+        <div>Python Developer<br>SDE<br>Prompt Engineer<br>Full Stack Developer<br>SDE</div>
+      </div>
+      <p>Python coder,SDE, prompt engineer, and front-end developer passionate about crafting beautiful user experiences and building efficient digital solutions.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about">
+  <div class="card">
+    <div class="profile-pic"><img src="C:\Users\pavan\OneDrive\Desktop\details\PICTURE.png"></div>
+    <h2 style="margin-top:20px;text-align:center">About Me</h2>
+    <p style="margin-top:10px;font-size:15px;line-height:1.7;color:var(--muted)">Python Developer, Software Development Engineer (SDE), Prompt Engineer, and Full Stack Developer with hands-on experience in building clean, responsive, and efficient web applications. I bring strong problem-solving abilities, a collaborative mindset, and a commitment to writing high-quality, maintainable code. My work focuses on developing scalable solutions, designing user-centric interfaces, and continuously enhancing user experience. I am seeking opportunities that allow me to contribute meaningfully to organizational objectives while growing my technical and professional capabilities.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="intern">
+  <div class="card">
+    <h2>Internships</h2>
+    <ul style="margin-top:14px;line-height:1.7;color:var(--muted)">
+      <li><b>Web Developer & Designer Intern — AICTE OIB-SIP</b><br>Designed and developed small-scale web applications using HTML, CSS, and JavaScript, focusing on clean architecture and efficient functionality. Built interactive tools such as a dynamic calculator and a feature-rich To-Do application, implementing effective event handling and DOM manipulation. Enhanced overall UI/UX through structured layouts, intuitive user flows, and visually balanced components. Ensured cross-device compatibility by applying responsive design principles. Collaborated effectively using Git and GitHub for version control, code reviews, and project management.</li>
+      
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="education">
+  <div class="card">
+    <h2>Education</h2>
+    <ul style="margin-top:14px;line-height:1.8;color:var(--muted)">
+      <li>2023-27: B.Tech-CSE (till 4 sems) — 94%</li>
+      <li>2021-23: Intermediate- MPC — 91%</li>
+      <li>2020-21: SSC — 98%</li>
+      
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <ul style="margin-top:14px;line-height:1.8;color:var(--muted)">
+      <li>C (Basics) — 75%</li>
+      <li>Python — 90%</li>
+      <li>HTML/CSS — 92%</li>
+      <li>JavaScript — 85%</li>
+      <li>React (Basics) — 60%</li>
+      <li>SQL — 75%</li>
+      <li>Prompt Engineering — 88%</li>
+      <li>DSA — 70%</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="certs">
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul style="margin-top:14px;line-height:1.7;color:var(--muted)">
+      <li>Google AI Essentials — Coursera</li>
+      <li>Prompt Engineering — Scaler</li>
+      <li>Web Development — EduBridge & Nirmaan</li>
+      <li>Solution Challenge — GDGoC</li>
+      <li>DevXplore Hackathon — GDGoC NECN</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="contact">
+  <div class="card contact">
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/"> 
+      <input type="hidden" name="form-name" value="contact"> 
+      <input type="hidden" name="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <input name="name" placeholder="Your Name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<br><br>
+  <section id="hire" style="padding:60px 20px;max-width:1000px;margin:auto;">
+    <div class="card" style="text-align:center;background:linear-gradient(135deg, rgba(110,231,183,0.25), rgba(96,165,250,0.25));box-shadow:0 0 25px rgba(110,231,183,0.6);">
+      <h2 style="color:white;font-size:26px;margin-bottom:10px">Ready to Hire?</h2>
+      <p style="color:var(--muted);margin-bottom:20px;font-size:16px">I'm available for full‑time roles, internships, and freelance opportunities.</p>
+      <a href="mailto:pavankumargandavarapu@gmail.com" style="padding:14px 26px;border-radius:12px;background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#041014;font-weight:800;text-decoration:none;box-shadow:0 0 22px rgba(110,231,183,0.9);font-size:17px;display:inline-block;">Hire Me</a>
+    </div>
+  </section>
+
+</body>
+</html>
